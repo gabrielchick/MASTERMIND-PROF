@@ -150,3 +150,22 @@ public class TicTacToeWithMinimax {
         return true; // No empty spaces found
     }
 }
+
+
+
+
+
+//Game Setup and Board Display:
+//The board is a 3x3 grid represented by a char array.
+//The game starts with the player as 'X' and alternates turns between the player and computer until someone wins or the board is full.
+//Player and Computer Turns:
+//The player selects a position by entering a number (1-9), which is then converted to a grid index.
+//The computer’s turn uses the findBestMove method, powered by the Minimax algorithm to determine the optimal move for 'O'.
+//Minimax Algorithm:
+//The minimax function simulates all potential moves to assign a score to each possible outcome.
+//If isMax is true, it means it’s the computer's turn, so it aims to maximize its score.
+//If isMax is false, it simulates the player's move, which minimizes the computer’s score.
+//The Minimax function uses recursion and depth-tracking to evaluate the best strategic choice for the computer.
+//Win and Board-Full Checks:
+//checkWin checks if a row, column, or diagonal is completed by either 'X' or 'O'.
+//isBoardFull checks if the board is entirely filled without a winner, resulting in a tie.
